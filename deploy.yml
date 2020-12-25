@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+piVersion: apps/v1
 kind: Deployment
 metadata:
   name: deploy1
@@ -23,9 +23,9 @@ metadata:
 spec:
   selector:
       app: myapp
-      ports:
-          - port: 2000
-            targetPort: 2000
-            nodePort: 32001
-            protocol: TCP
-      type: NodePort
+  ports:
+      - port: 2000
+        targetPort: 2000
+        nodePort: 32001
+        protocol: TCP
+  type: NodePort
